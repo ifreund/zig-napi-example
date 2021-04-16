@@ -3,11 +3,8 @@
   "version": "0.0.0",
   "description": "example napi package in zig",
   "main": "example.js",
-  "dependencies": {
-    "node-gyp": "^8.0.0"
-  },
   "scripts": {
-    "build": "zig build-lib -static -lc -isystem /usr/include/node example.zig && node-gyp rebuild"
+    "build": "zig build-lib -dynamic -lc -isystem /usr/include/node example.zig -femit-bin=example.node"
   },
   "author": "Isaac Freund <ifreund@ifreund.xyz>",
   "license": "0BSD"

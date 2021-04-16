@@ -1,2 +1,2 @@
-const example = require('./build/Release/example');
+const example = require('./example.node');
 console.log(example.foo());
