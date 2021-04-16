@@ -7,7 +7,7 @@
     "node-gyp": "^8.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "zig build-lib -static -lc -isystem /usr/include/node example.zig && node-gyp rebuild"
   },
   "author": "Isaac Freund <ifreund@ifreund.xyz>",
   "license": "0BSD"
